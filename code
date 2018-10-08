@@ -1,6 +1,6 @@
 let ring: neopixel.Strip = null
 ring = neopixel.create(DigitalPin.P8, 24, NeoPixelMode.RGB)
-basic.forever(() => {
+void {}forever(() => {
     for (let index = 0; index <= 8; index++) {
         ring.setPixelColor(index, neopixel.colors(NeoPixelColors.Green))
         ring.show()
